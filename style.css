@@ -176,6 +176,7 @@ header .user img{
 .home p{
     font-size: 2rem;
     color: #eee;
+    text-transform: none;
 }
 
 .about .row{
@@ -209,7 +210,7 @@ header .user img{
 }
 
 .about .row .counter .box span{
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--yellow);
     word-wrap: break-word;
 }
@@ -219,6 +220,10 @@ header .user img{
     color: #fff;
 }
 
+.about .row .counter .rank h3{
+    font-size: 1rem;
+    color: #fff;
+}
 .about .row .info h3{
     font-size: 2rem;
     color: var(--yellow);
@@ -282,6 +287,85 @@ header .user img{
     background: var(--yellow);
 }
 
+.portfolio .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.portfolio .achieve{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.portfolio .achieve li{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 0 .5rem;
+}
+
+.portfolio .achieve li span{
+    font-size: 2rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+    text-transform: none;
+ }
+
+.contact .row .content .info h3 i{
+    color: var(--yellow);
+}
 
 
 @media (max-width: 1200px){
@@ -330,6 +414,10 @@ header .user img{
     }
 
     .education .box-container .box{
+        width: 100%;
+    }
+
+    .portfolio .box-container .box{
         width: 100%;
     }
 }
